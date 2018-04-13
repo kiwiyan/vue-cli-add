@@ -38,12 +38,12 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../dist/index.html'), // html的静态输出目录
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsRoot: path.resolve(__dirname, '../dist'), // 输出目录，包含js，css，img
+    assetsSubDirectory: 'static', // 输出文件夹
+    assetsPublicPath: '/', // 输出的静态文件根路径(末尾需要加斜杠，否则router的js懒加载会有路径错误)
 
     /**
      * Source Maps
